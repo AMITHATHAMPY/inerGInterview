@@ -26,14 +26,7 @@ class Graph extends React.Component {
         },
         height: 400,
         // width: 600,
-        // width: window.innerWidth / 2.3,
-        // height: window.innerHeight / 1.45 - 50,
         title: "Covid in India",
-        // hovermode: "closest",
-        // hoverlabel: {
-        //   bgcolor: "rgba(0,0,0,1)",
-        //   bordercolor: "rgba(200,200,200,1)",
-        // },
         plot_bgcolor: "#040620",
         paper_bgcolor: "#191B39",
         font: {
