@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Card, CardBody, Button } from "reactstrap";
+import { Row, Card, CardBody, Button, CardTitle, Col } from "reactstrap";
 import SubCards from "./card";
 import { getOverview } from "../data/actions";
 import { connect } from "react-redux";
@@ -11,6 +11,7 @@ class OverView extends React.Component {
     this.state = {
       state: {},
       params: "india",
+      title: "Covid in India",
       overview: [],
       open: false,
     };
@@ -80,18 +81,29 @@ class OverView extends React.Component {
           />
         </div>
         <Card style={{ backgroundColor: "#191B39", borderRadius: "10px" }}>
-          <div
-            className="float-right"
-            style={{
-              textAlign: "right",
-              paddingRight: "20px",
-              paddingTop: "20px",
-            }}
-          >
-            <Button className="mr-xs" onClick={this.filterOpen}>
-              Filter
-            </Button>
-          </div>
+          <Row>
+            <Col
+              style={{
+                paddingTop: "20px",
+                textAlign: "left",
+                paddingLeft: "40px",
+                color: "white",
+              }}
+            >
+              <h4>{this.state.title}</h4>
+            </Col>
+            <Col
+              className="float-right"
+              style={{
+                textAlign: "right",
+                paddingRight: "40px",
+                paddingTop: "20px",
+              }}
+            >
+              <Button onClick={this.filterOpen}>Filter</Button>
+            </Col>
+          </Row>
+
           <CardBody>
             <Row cellSpacing={1}>
               <SubCards
