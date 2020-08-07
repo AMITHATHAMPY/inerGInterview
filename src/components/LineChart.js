@@ -123,7 +123,7 @@ class Graph extends React.Component {
               revision={this.state.revisionNo}
               useResizeHandler={true}
               style={{ width: "100%", height: "100%" }}
-              config={{ displayModeBar: false, responsive: true }}
+              config={{ displayModeBar: false }}
             />
           </CardBody>
         </Card>
