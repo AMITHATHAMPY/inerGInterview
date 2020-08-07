@@ -1,0 +1,44 @@
+{
+  "states": [
+    {
+      "name": "Kerala",
+      "geometry": [10.8505, 76.2711],
+      "total": 300,
+      "active": 100,
+      "Recovered": 185,
+      "death": 5
+    },
+    {
+      "name": "Karnataka",
+      "geometry": [12.97, 77.6536],
+      "total": 30,
+      "active": 10,
+      "Recovered": 15,
+      "death": 5
+    },
+    {
+      "name": "Tamilnadu",
+      "geometry": [13.0827, 80.2707],
+      "total": 900,
+      "active": 700,
+      "Recovered": 85,
+      "death": 115
+    },
+    {
+      "name": "Andra",
+      "geometry": [15.9129, 79.74],
+      "total": 500,
+      "active": 300,
+      "Recovered": 50,
+      "death": 150
+    },
+    {
+      "name": "Telungana",
+      "geometry": [18.1124, 79.0193],
+      "total": 310,
+      "active": 105,
+      "Recovered": 185,
+      "death": 10
+    }
+  ]
+}
