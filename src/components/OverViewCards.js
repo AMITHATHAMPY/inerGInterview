@@ -3,7 +3,7 @@ import { Row, Card, CardBody, Button } from "reactstrap";
 import SubCards from "./card";
 import { getOverview } from "../data/actions";
 import { connect } from "react-redux";
-import Modals from "../components/filter/filterPie";
+import Modals from "../components/filter/filter";
 
 class OverView extends React.Component {
   constructor(props) {
