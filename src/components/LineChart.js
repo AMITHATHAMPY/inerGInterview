@@ -3,7 +3,7 @@ import { Row, Card, CardBody, Button } from "reactstrap";
 import Plot from "react-plotly.js";
 import { getLine } from "../data/actions";
 import { connect } from "react-redux";
-import Modals from "../components/filter/filterLine";
+import Modals from "../components/filter/filterPie";
 
 class Graph extends React.Component {
   constructor(props) {

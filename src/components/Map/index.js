@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Map, TileLayer } from "react-leaflet";
 import "./leaf.css";
 import "leaflet/dist/leaflet.css";
-import { Row, Col, Card, CardTitle, CardText } from "reactstrap";
+import { Card } from "reactstrap";
 import data from "../../assets/data";
 import Markers from "./VenueMarkers";
 
