@@ -11,7 +11,7 @@ class Graph extends React.Component {
 
     this.state = {
       state: {},
-      params: "total",
+      params: "india",
       open: false,
       data: [],
       revision: 1,
@@ -51,6 +51,10 @@ class Graph extends React.Component {
     this.setState(
       {
         open: false,
+        layout: {
+          ...this.state.layout,
+          title: "Covid in" + " " + this.state.params,
+        },
       },
       () => {
         this.props.getLine(this.state.params);
@@ -69,7 +73,11 @@ class Graph extends React.Component {
     this.setState(
       {
         state: {},
-        params: "total",
+        params: "india",
+        layout: {
+          ...this.state.layout,
+          title: "Covid in India",
+        },
       },
       () => {
         this.props.getLine(this.state.params);

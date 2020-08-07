@@ -9,7 +9,7 @@ import line from "../assets/line.json";
 
 const initStateData = {
   stateList: [
-    { key: "total", label: "All" },
+    { key: "india", label: "All" },
     { key: "kerala", label: "Kerala" },
     { key: "Karnataka", label: "Karnataka" },
     { key: "Tamilnadu", label: "Tamilnadu" },
@@ -76,7 +76,6 @@ const datareducer = (state = initStateData, action) => {
       };
     case GET_LINE:
       let datas = state.lineData;
-
       state.lineData.map((item, i) => {
         datas[i].y = line[action.payload][i];
       });

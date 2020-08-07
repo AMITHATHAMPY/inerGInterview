@@ -10,7 +10,7 @@ class OverView extends React.Component {
     super(props);
     this.state = {
       state: {},
-      params: "total",
+      params: "india",
       overview: [],
       open: false,
     };
@@ -29,6 +29,7 @@ class OverView extends React.Component {
     this.setState(
       {
         open: false,
+        title: "Covid in" + " " + this.state.params,
       },
       () => {
         this.props.getOverview(this.state.params);
@@ -44,7 +45,8 @@ class OverView extends React.Component {
     this.setState(
       {
         state: {},
-        params: "total",
+        params: "india",
+        title: "Covid in India",
       },
       () => {
         this.props.getOverview(this.state.params);

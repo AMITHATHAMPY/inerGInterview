@@ -10,7 +10,7 @@ class PieChart extends React.Component {
     super(props);
     this.state = {
       state: {},
-      params: "total",
+      params: "india",
       revisionNo: 1,
       data: [],
       layout: {
@@ -48,6 +48,10 @@ class PieChart extends React.Component {
     this.setState(
       {
         open: false,
+        layout: {
+          ...this.state.layout,
+          title: "Covid in" + " " + this.state.params,
+        },
       },
       () => {
         this.props.getPie(this.state.params);
@@ -66,7 +70,11 @@ class PieChart extends React.Component {
     this.setState(
       {
         state: {},
-        params: "total",
+        params: "india",
+        layout: {
+          ...this.state.layout,
+          title: "Covid in India",
+        },
       },
       () => {
         this.props.getPie(this.state.params);
