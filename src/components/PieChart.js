@@ -28,7 +28,7 @@ class PieChart extends React.Component {
           size: 14,
           color: "white",
         },
-        width: 500,
+        // width: 500,
         title: "Covid in India",
       },
       open: false,
@@ -119,6 +119,8 @@ class PieChart extends React.Component {
               layout={this.state.layout}
               revision={this.state.revisionNo}
               config={{ displayModeBar: false }}
+              useResizeHandler={true}
+              style={{ width: "100%", height: "100%" }}
             />
           </CardBody>
         </Card>

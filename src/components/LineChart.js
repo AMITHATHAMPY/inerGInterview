@@ -16,7 +16,7 @@ class Graph extends React.Component {
       data: [],
       revision: 1,
       layout: {
-        // autosize: true,
+        autosize: true,
         margin: {
           l: 50,
           r: 50,
@@ -25,7 +25,7 @@ class Graph extends React.Component {
           pad: 0,
         },
         height: 400,
-        width: 600,
+        // width: 600,
         // width: window.innerWidth / 2.3,
         // height: window.innerHeight / 1.45 - 50,
         title: "Covid in India",
@@ -128,7 +128,8 @@ class Graph extends React.Component {
               data={this.props.lineData}
               layout={this.state.layout}
               revision={this.state.revisionNo}
-              useResizeHandler
+              useResizeHandler={true}
+              style={{ width: "100%", height: "100%" }}
               config={{ displayModeBar: false, responsive: true }}
             />
           </CardBody>
